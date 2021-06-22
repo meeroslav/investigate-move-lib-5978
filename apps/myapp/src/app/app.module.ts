@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MylibModule } from '@migration-tests-old/mylib';
+import { MylibModule } from '@migration-tests-old/shared/mylib';
 
 import { AppComponent } from './app.component';
 
@@ -10,4 +10,4 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

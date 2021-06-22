@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MysrvService } from '@migration-tests-old/mylib';
+import { MysrvService } from '@migration-tests-old/shared/mylib';
 
 @Component({
   selector: 'migration-tests-old-root',
@@ -9,5 +9,5 @@ import { MysrvService } from '@migration-tests-old/mylib';
 export class AppComponent {
   title = 'myapp';
 
-  constructor(private readonly srv: MysrvService) { }
+  constructor(private readonly srv: MysrvService) {}
 }

@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@migration-tests-old/mylib": ["libs/mylib/src/index.ts"]
+      "@migration-tests-old/shared/mylib": ["libs/shared/mylib/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -4,6 +4,6 @@ import { MysrvService } from './mysrv.service';
 
 @NgModule({
   imports: [CommonModule],
-  providers: [MysrvService]
+  providers: [MysrvService],
 })
-export class MylibModule { }
+export class MylibModule {}

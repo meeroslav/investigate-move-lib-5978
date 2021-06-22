@@ -1,6 +1,6 @@
 module.exports = {
-  displayName: 'mylib',
-  preset: '../../jest.preset.js',
+  displayName: 'shared-mylib',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -14,7 +14,7 @@ module.exports = {
       },
     },
   },
-  coverageDirectory: '../../coverage/libs/mylib',
+  coverageDirectory: '../../../coverage/libs/shared/mylib',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

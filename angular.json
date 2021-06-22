@@ -143,21 +143,21 @@
         }
       }
     },
-    "mylib": {
+    "shared-mylib": {
       "projectType": "library",
-      "root": "libs/mylib",
-      "sourceRoot": "libs/mylib/src",
+      "root": "libs/shared/mylib",
+      "sourceRoot": "libs/shared/mylib/src",
       "prefix": "migration-tests-old",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:ng-packagr-lite",
           "options": {
-            "tsConfig": "libs/mylib/tsconfig.lib.json",
-            "project": "libs/mylib/ng-package.json"
+            "tsConfig": "libs/shared/mylib/tsconfig.lib.json",
+            "project": "libs/shared/mylib/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "libs/mylib/tsconfig.lib.prod.json"
+              "tsConfig": "libs/shared/mylib/tsconfig.lib.prod.json"
             }
           }
         },
@@ -165,16 +165,16 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "libs/mylib/src/**/*.ts",
-              "libs/mylib/src/**/*.html"
+              "libs/shared/mylib/src/**/*.ts",
+              "libs/shared/mylib/src/**/*.html"
             ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/mylib"],
+          "outputs": ["coverage/libs/shared/mylib"],
           "options": {
-            "jestConfig": "libs/mylib/jest.config.js",
+            "jestConfig": "libs/shared/mylib/jest.config.js",
             "passWithNoTests": true
           }
         }
